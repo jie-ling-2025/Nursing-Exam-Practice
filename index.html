@@ -4,9 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#123b50">
-  <meta name="description" content="護理師國考歷屆試題互動練習。作答、交卷後查看官方答案與成績。">
+  <meta name="description" content="護理師國考歷屆試題互動練習。可自選科目與題數，交卷後查看分數、解析及本機測驗紀錄。">
   <title>護理師國考｜互動練習室</title>
   <link rel="stylesheet" href="./styles.css">
+  <script src="./question-bank.js" defer></script>
   <script src="./questions.js" defer></script>
   <script src="./app.js" defer></script>
 </head>
@@ -16,9 +17,9 @@
     <div class="hero-inner">
       <p class="eyebrow">NURSING EXAM PRACTICE</p>
       <h1>護理師國考<br><span>互動練習室</span></h1>
-      <p class="hero-copy">用歷屆試題練習，交卷後查看官方答案與作答結果。</p>
+      <p class="hero-copy">自選科目與題數，隨機練習；交卷後查看分數、解析與歷次紀錄。</p>
       <div class="hero-tags" aria-label="練習特色">
-        <span>20 題・五科各 4 題</span><span>無須登入</span><span>作答不會上傳</span>
+        <span>自選科目與題數</span><span>無須登入</span><span>資料只存在本機</span>
       </div>
     </div>
     <div class="hero-orbit orbit-one" aria-hidden="true"></div>
@@ -29,52 +30,85 @@
     <section class="instructions card" aria-labelledby="instructions-title">
       <div>
         <p class="section-kicker">練習說明</p>
-        <h2 id="instructions-title">完成 20 題，再看答題結果</h2>
-        <p>每題 5 分，滿分 100 分。可先完成部分題目再交卷；未作答題目會計為錯誤，交卷前會再次確認。</p>
+        <h2 id="instructions-title">設定你的練習範圍</h2>
+        <p>勾選一科或多科並選擇 5～80 題；多科會平均分配題數。每題 5 分，未作答題目計為錯誤。</p>
+        <p class="bank-quality-note">已接入民國 106～115 年題庫。除已核對的 20 題外，其餘擷取文字尚未逐題對照原卷；作答前可點選考選部原始試題 PDF 核對。答案依題庫記載的官方最終答案整理。無法拆分選項、無文字試卷及特殊給分題未納入。</p>
       </div>
-      <div class="exam-chip"><strong>115 年</strong><span>第一次護理師考試</span><small>官方歷屆試題・單選題</small></div>
+      <div class="exam-chip"><strong>106–115 年</strong><span>護理師歷屆考試</span><small>五科・多梯次官方試題</small></div>
     </section>
 
-    <section class="progress-card card" aria-label="作答進度">
-      <div class="progress-top">
-        <span id="progress-label">已作答 0 / 20 題</span>
-        <span id="progress-percent">0%</span>
+    <section id="quiz-setup" class="quiz-setup card" aria-labelledby="setup-title">
+      <div class="setup-heading">
+        <div><p class="section-kicker">測驗設定</p><h2 id="setup-title">選擇科目與題數</h2></div>
+        <span id="available-count" class="available-count" aria-live="polite"></span>
       </div>
-      <div class="progress-track" role="progressbar" aria-label="作答進度" aria-valuemin="0" aria-valuemax="20" aria-valuenow="0" id="progress-bar">
-        <span id="progress-fill"></span>
+      <fieldset class="subject-picker">
+        <legend>想練習哪些科目？（可複選）</legend>
+        <div id="subject-options" class="subject-options"></div>
+      </fieldset>
+      <div class="count-picker">
+        <label for="question-count">本次題數</label>
+        <select id="question-count" name="question-count"></select>
+        <span>每題 5 分</span>
       </div>
+      <p id="setup-message" class="form-message" role="status"></p>
+      <button id="start-quiz" class="button button-primary" type="button">開始隨機測驗 <span aria-hidden="true">→</span></button>
     </section>
 
-    <form id="quiz-form" novalidate>
-      <div id="question-list"></div>
-      <div class="submit-wrap">
-        <p id="submit-hint">作答完成後即可交卷查看分數與官方答案。</p>
-        <button class="button button-primary" type="submit">交卷看結果 <span aria-hidden="true">→</span></button>
-      </div>
-    </form>
+    <section id="quiz-session" hidden aria-label="測驗作答">
+      <section class="progress-card card" aria-label="作答進度">
+        <div class="progress-top"><span id="progress-label">已作答 0 / 0 題</span><span id="progress-percent">0%</span></div>
+        <div class="progress-track" role="progressbar" aria-label="作答進度" aria-valuemin="0" aria-valuemax="0" aria-valuenow="0" id="progress-bar"><span id="progress-fill"></span></div>
+      </section>
+      <form id="quiz-form" novalidate>
+        <div id="question-list"></div>
+        <div class="submit-wrap">
+          <p id="submit-hint">作答完成後即可交卷查看分數與解析。</p>
+          <button class="button button-primary" type="submit">交卷看結果 <span aria-hidden="true">→</span></button>
+        </div>
+      </form>
+    </section>
 
     <section id="results" class="results card" aria-live="polite" aria-labelledby="results-title" hidden>
       <div class="result-intro">
         <p class="section-kicker">本次結果</p>
         <h2 id="results-title">交卷完成</h2>
+        <p id="attempt-time" class="attempt-time"></p>
         <p id="score-summary"></p>
       </div>
       <div class="result-stats" id="result-stats"></div>
-      <p class="answer-note">以下為考選部公告答案。本頁未提供 AI 解析。</p>
-      <button id="retry-button" class="button button-secondary" type="button">重新測驗 <span aria-hidden="true">↻</span></button>
+      <p class="answer-note">官方答案依考選部最終公告整理；下方為 AI 輔助整理的非官方學習解析。</p>
+      <button id="retry-button" class="button button-secondary" type="button">再測一次（重新抽題） <span aria-hidden="true">↻</span></button>
+    </section>
+
+    <section id="history-card" class="history-card card" aria-labelledby="history-title">
+      <div class="history-heading">
+        <div><p class="section-kicker">本機保存</p><h2 id="history-title">歷次測驗紀錄</h2></div>
+        <button id="export-csv" class="button button-secondary" type="button">匯出成績單 CSV</button>
+      </div>
+      <p class="storage-note">測驗日期、時間與成績只保存在這台裝置的瀏覽器，不會上傳；清除瀏覽器網站資料會一併刪除紀錄。</p>
+      <p id="history-message" class="history-message" role="status"></p>
+      <p id="history-empty" class="history-empty">尚無測驗紀錄。完成測驗後，成績會保存在這裡。</p>
+      <div class="history-table-wrap">
+        <table id="history-table" hidden>
+          <thead><tr><th scope="col">交卷時間</th><th scope="col">題數</th><th scope="col">科目</th><th scope="col">答對／答錯</th><th scope="col">成績</th></tr></thead>
+          <tbody id="history-rows"></tbody>
+        </table>
+      </div>
     </section>
 
     <section class="notice card" aria-labelledby="notice-title">
       <p class="section-kicker">來源與使用說明</p>
       <h2 id="notice-title">官方來源・非官方練習頁</h2>
       <p>題目及答案來源：考選部考畢試題查詢平台。各題附年度、梯次、科目、原卷題號及官方查詢入口；查詢時請依這些資訊定位原卷。</p>
-      <p>本網站為非官方學習練習作品，與考選部無隸屬、合作或認可關係。答案依已核對之官方最終公告整理；如有差異，請以考選部公告為準。</p>
+      <p>本網站為非官方學習練習作品，與考選部無隸屬、合作或認可關係。已核對題目及其餘題庫資料分別標示；如有差異，請以考選部公告為準。</p>
+      <p>AI 輔助學習解析僅供複習，並非考選部官方說明；臨床照護請依最新專業指引、教材及醫囑。</p>
       <p>本頁未另行收錄未確認授權之第三方圖片、圖表或素材。引用其他著作時，使用者應另行確認權利與授權條件。</p>
       <blockquote>「本網站資料，歡迎朋友連結使用。但引用時，請註明資料來源並請確保資料之完整（包括本項宣示在內），均不得任意增刪」<br>2018 Ministry of Examination R.O.C.(Taiwan) All rights reserved.</blockquote>
       <a class="official-link" href="https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx" target="_blank" rel="noopener noreferrer">前往考選部考畢試題查詢平台 <span aria-hidden="true">↗</span></a>
-      <p class="fineprint">題目文字完整依歷屆試題呈現；本網站提供互動練習介面，不代表考選部立場。</p>
+      <p class="fineprint">除標示已核對的題目外，其餘題幹及選項為 PDF 文字擷取，可能有辨識錯誤；請依官方原卷核對。本網站不代表考選部立場。</p>
     </section>
   </main>
-  <footer class="site-footer"><span>護理師國考｜互動練習室</span><span>靜態網頁・作答僅留在目前瀏覽器記憶體</span></footer>
+  <footer class="site-footer"><span>護理師國考｜互動練習室</span><span>靜態網頁・無帳號、無後端、無資料上傳</span></footer>
 </body>
 </html>
