@@ -1,0 +1,422 @@
+window.NURSING_QUESTIONS = [
+  {
+    "number": 1,
+    "stem": "有關流行性感冒病毒（influenza virus），下列敘述何者正確？",
+    "options": {
+      "A": "流行性感冒病毒是一種DNA 病毒",
+      "B": "流行性感冒病毒中最易引起大流行（pandemic）及地區流行（epidemic）的是type B",
+      "C": "流行性感冒病毒發生抗原移型（antigenic shift）是大流行（pandemic）發生的主要原因",
+      "D": "決定流行性感冒病毒亞型的是病毒表面的血球凝集素（hemagglutinin）及病毒的核蛋白（nucleoprotein）"
+    },
+    "answer": "C",
+    "subject": "基礎醫學(包括解剖學、生理學、病理學、藥理學、微生物學與免疫學)",
+    "year": 115,
+    "session": "第一次",
+    "examCode": "115030",
+    "examName": "護理師考試",
+    "originalNumber": 24,
+    "pdfPage": 4,
+    "answerBasis": "標準答案（官方未刊載更正）",
+    "subjectCode": "0101",
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx"
+  },
+  {
+    "number": 2,
+    "stem": "利尿劑主要作用機制為下列何者？",
+    "options": {
+      "A": "滲透性利尿劑主要作用在遠曲小管",
+      "B": "環利尿劑主要作用在鈉—氫協同運輸",
+      "C": "醛固酮拮抗劑主要作用在集尿管",
+      "D": "鈉通道阻斷劑主要作用在近曲小管"
+    },
+    "answer": "C",
+    "subject": "基礎醫學(包括解剖學、生理學、病理學、藥理學、微生物學與免疫學)",
+    "year": 115,
+    "session": "第一次",
+    "examCode": "115030",
+    "examName": "護理師考試",
+    "originalNumber": 9,
+    "pdfPage": 2,
+    "answerBasis": "標準答案（官方未刊載更正）",
+    "subjectCode": "0101",
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx"
+  },
+  {
+    "number": 3,
+    "stem": "有關革蘭氏陽性細菌的敘述，下列何者正確？",
+    "options": {
+      "A": "其革蘭氏染色結果呈現紅色",
+      "B": "其細胞壁具有內膜和外膜",
+      "C": "其細胞膜上具有脂多醣體（lipopolysaccharide）",
+      "D": "其具有的胜肽聚醣（peptidoglycan）層較革蘭氏陰性細菌的厚"
+    },
+    "answer": "D",
+    "subject": "基礎醫學(包括解剖學、生理學、病理學、藥理學、微生物學與免疫學)",
+    "year": 115,
+    "session": "第一次",
+    "examCode": "115030",
+    "examName": "護理師考試",
+    "originalNumber": 41,
+    "pdfPage": 7,
+    "answerBasis": "標準答案（官方未刊載更正）",
+    "subjectCode": "0101",
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx"
+  },
+  {
+    "number": 4,
+    "stem": "下列有關子宮內膜（endometrium）的敘述，何者正確？",
+    "options": {
+      "A": "月經期（menstrual phase）整個子宮內膜會崩解",
+      "B": "增生期（proliferative phase）的子宮內膜很薄，尚未分布血管",
+      "C": "排卵（ovulation）時，子宮內膜厚度達到極致",
+      "D": "分泌期（secretory phase）的子宮內膜腺可分泌肝醣"
+    },
+    "answer": "D",
+    "subject": "基礎醫學(包括解剖學、生理學、病理學、藥理學、微生物學與免疫學)",
+    "year": 115,
+    "session": "第一次",
+    "examCode": "115030",
+    "examName": "護理師考試",
+    "originalNumber": 17,
+    "pdfPage": 3,
+    "answerBasis": "標準答案（官方未刊載更正）",
+    "subjectCode": "0101",
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx"
+  },
+  {
+    "number": 5,
+    "stem": "面臨末期病人即將離世，有關家屬哀傷支持之敘述，下列何者最適當？",
+    "options": {
+      "A": "家屬減少探視，有助於漸進去除依附，減低分離焦慮",
+      "B": "家屬在病人逝世後，開始進入哀傷歷程",
+      "C": "家庭關係動態評估，有助於辨識需哀傷支持者",
+      "D": "家屬與病人宜避免互表感受，以免加深哀傷情緒"
+    },
+    "answer": "C",
+    "subject": "基本護理學（包括護理原理、護理技術）與護理行政",
+    "year": 115,
+    "session": "第一次",
+    "examCode": "115030",
+    "examName": "護理師考試",
+    "originalNumber": 32,
+    "pdfPage": 6,
+    "answerBasis": "更正答案（官方更正檔；本題未更正）",
+    "subjectCode": "0102",
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx"
+  },
+  {
+    "number": 6,
+    "stem": "護理師為了實踐個人護理理念，不計金錢報酬前往有大量傷患的醫院支援，以獲得個人精神與靈性的昇華。此行為符合那一種護理理念？",
+    "options": {
+      "A": "苦行僧主義",
+      "B": "浪漫主義",
+      "C": "實用主義",
+      "D": "具人文色彩的存在主義"
+    },
+    "answer": "A",
+    "subject": "基本護理學（包括護理原理、護理技術）與護理行政",
+    "year": 115,
+    "session": "第一次",
+    "examCode": "115030",
+    "examName": "護理師考試",
+    "originalNumber": 3,
+    "pdfPage": 1,
+    "answerBasis": "更正答案（官方更正檔；本題未更正）",
+    "subjectCode": "0102",
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx"
+  },
+  {
+    "number": 7,
+    "stem": "有關良好溝通管道之要件，下列何者錯誤？",
+    "options": {
+      "A": "要傳達的訊息是即時的",
+      "B": "要傳達的訊息是必須的",
+      "C": "組織成員容易取得訊息",
+      "D": "訊息是直接且正式傳達"
+    },
+    "answer": "A",
+    "subject": "基本護理學（包括護理原理、護理技術）與護理行政",
+    "year": 115,
+    "session": "第一次",
+    "examCode": "115030",
+    "examName": "護理師考試",
+    "originalNumber": 45,
+    "pdfPage": 8,
+    "answerBasis": "更正答案（官方更正檔；本題未更正）",
+    "subjectCode": "0102",
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx"
+  },
+  {
+    "number": 8,
+    "stem": "病人雙側手臂因骨折以石膏固定，有關血壓測量的敘述，下列何者正確？",
+    "options": {
+      "A": "雖然打上石膏，仍可以測量橈動脈血壓",
+      "B": "欲測量膝膕動脈時，壓脈帶氣囊應置於大腿中段前側",
+      "C": "一般測得的膝膕動脈收縮壓數值較肱動脈數值為低",
+      "D": "病人採俯臥姿勢，進行膝膕動脈血壓的測量"
+    },
+    "answer": "D",
+    "subject": "基本護理學（包括護理原理、護理技術）與護理行政",
+    "year": 115,
+    "session": "第一次",
+    "examCode": "115030",
+    "examName": "護理師考試",
+    "originalNumber": 26,
+    "pdfPage": 5,
+    "answerBasis": "更正答案（官方更正檔；本題未更正）",
+    "subjectCode": "0102",
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx"
+  },
+  {
+    "number": 9,
+    "stem": "有關急性中耳炎的醫療處置，下列何者錯誤？",
+    "options": {
+      "A": "抗生素的使用要持續3～5天",
+      "B": "疼痛發燒可使用解熱鎮痛劑",
+      "C": "鼓膜腫脹時可行鼓膜切開術（myringotomy）",
+      "D": "使用減輕鼻充血藥物，幫助耳咽管功能恢復"
+    },
+    "answer": "A",
+    "subject": "內外科護理學",
+    "year": 115,
+    "session": "第一次",
+    "examCode": "115030",
+    "examName": "護理師考試",
+    "originalNumber": 13,
+    "pdfPage": 3,
+    "answerBasis": "更正答案（官方更正檔；本題未更正）",
+    "subjectCode": "0103",
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx"
+  },
+  {
+    "number": 10,
+    "stem": "有關心包膜炎照護之敘述，下列何者不適宜？",
+    "options": {
+      "A": "鼓勵病人採平躺及深呼吸，以減緩胸痛",
+      "B": "發燒時應臥床休息，以減少心肌耗氧量",
+      "C": "退燒藥可使用阿斯匹靈（Aspirin）",
+      "D": "提供高蛋白、高醣飲食"
+    },
+    "answer": "A",
+    "subject": "內外科護理學",
+    "year": 115,
+    "session": "第一次",
+    "examCode": "115030",
+    "examName": "護理師考試",
+    "originalNumber": 16,
+    "pdfPage": 3,
+    "answerBasis": "更正答案（官方更正檔；本題未更正）",
+    "subjectCode": "0103",
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx"
+  },
+  {
+    "number": 11,
+    "stem": "有關嗜鉻細胞瘤切除手術後之護理措施，下列何者錯誤？",
+    "options": {
+      "A": "注意有無腎上腺功能不全的徵象，必要時由靜脈輸注皮質醇",
+      "B": "監測每小時尿量，維持尿量在20～25 c.c./小時",
+      "C": "觀察術後出血情況與腸蠕動狀態",
+      "D": "依醫囑給與靜脈輸液，以維持體液容積"
+    },
+    "answer": "B",
+    "subject": "內外科護理學",
+    "year": 115,
+    "session": "第一次",
+    "examCode": "115030",
+    "examName": "護理師考試",
+    "originalNumber": 43,
+    "pdfPage": 8,
+    "answerBasis": "更正答案（官方更正檔；本題未更正）",
+    "subjectCode": "0103",
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx"
+  },
+  {
+    "number": 12,
+    "stem": "陳先生T3～T5脊髓損傷，目前血壓250/140 mmHg，心跳50～55次／分，有大量出汗情形，主訴頭部嚴重疼痛、看東西模糊，超過6小時以上未解尿，陳先生可能發生何種現象？",
+    "options": {
+      "A": "神經性休克",
+      "B": "自主神經過度反射",
+      "C": "脊髓自動症",
+      "D": "脊髓休克"
+    },
+    "answer": "B",
+    "subject": "內外科護理學",
+    "year": 115,
+    "session": "第一次",
+    "examCode": "115030",
+    "examName": "護理師考試",
+    "originalNumber": 1,
+    "pdfPage": 1,
+    "answerBasis": "更正答案（官方更正檔；本題未更正）",
+    "subjectCode": "0103",
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx"
+  },
+  {
+    "number": 13,
+    "stem": "林女士40 歲，目前懷孕10 週，高興成功懷孕，但也擔心胎兒有染色體問題。有關此期唐氏症遺傳診斷檢查之敘述，下列何者最不適當？",
+    "options": {
+      "A": "母血檢測胎兒甲型蛋白、β-hCG、抑制素A（inhibin A）、雌三醇數值",
+      "B": "超音波測量胎兒頸部透明帶厚度",
+      "C": "母血檢測β-hCG、妊娠性血漿蛋白A（PAPP-A）的數值",
+      "D": "可以採絨毛膜取樣術做染色體分析篩檢染色體異常"
+    },
+    "answer": "A",
+    "subject": "產兒科護理學",
+    "year": 115,
+    "session": "第一次",
+    "examCode": "115030",
+    "examName": "護理師考試",
+    "originalNumber": 5,
+    "pdfPage": 1,
+    "answerBasis": "標準答案（官方未刊載更正）",
+    "subjectCode": "0104",
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx"
+  },
+  {
+    "number": 14,
+    "stem": "有關正常新生兒的呼吸特徵，下列何者錯誤？",
+    "options": {
+      "A": "呼吸速率30～60 次／分鐘",
+      "B": "採胸式呼吸",
+      "C": "呼吸不規律",
+      "D": "有時會出現5 秒以內的呼吸暫停"
+    },
+    "answer": "B",
+    "subject": "產兒科護理學",
+    "year": 115,
+    "session": "第一次",
+    "examCode": "115030",
+    "examName": "護理師考試",
+    "originalNumber": 18,
+    "pdfPage": 4,
+    "answerBasis": "標準答案（官方未刊載更正）",
+    "subjectCode": "0104",
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx"
+  },
+  {
+    "number": 15,
+    "stem": "照護住院兒童時，下列敘述何者錯誤？",
+    "options": {
+      "A": "測量嬰兒生命徵象的順序以呼吸開始較佳",
+      "B": "幼兒期在發展自主感，檢查前應讓他決定是否願意接受檢查",
+      "C": "學齡前期兒童非常害怕身體受到傷害，需考量維護其身體完整性的照護",
+      "D": "學齡期兒童接受檢查前應先給予解釋增加其控制感"
+    },
+    "answer": "B",
+    "subject": "產兒科護理學",
+    "year": 115,
+    "session": "第一次",
+    "examCode": "115030",
+    "examName": "護理師考試",
+    "originalNumber": 32,
+    "pdfPage": 6,
+    "answerBasis": "標準答案（官方未刊載更正）",
+    "subjectCode": "0104",
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx"
+  },
+  {
+    "number": 16,
+    "stem": "小華，2 個月大，因被厚棉被蓋住頭部，母親掀開棉被後發現小華呈現無意識，有關其急救措施之敘述，下列何者正確？",
+    "options": {
+      "A": "立即給與口對口吹兩口氣",
+      "B": "檢查脈動位置，以橈動脈較合適",
+      "C": "心外按摩位置是兩乳頭連線中央下胸骨處",
+      "D": "單人施救，心外按摩與人工呼吸比率為15：2"
+    },
+    "answer": "C",
+    "subject": "產兒科護理學",
+    "year": 115,
+    "session": "第一次",
+    "examCode": "115030",
+    "examName": "護理師考試",
+    "originalNumber": 26,
+    "pdfPage": 5,
+    "answerBasis": "標準答案（官方未刊載更正）",
+    "subjectCode": "0104",
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx"
+  },
+  {
+    "number": 17,
+    "stem": "張太太因先生車禍意外過世出現激動不安、捶打家人，遂被帶至急診救治。依據卡普蘭（Caplan.）危機理論，張太太目前處於危機發展過程的那一期？",
+    "options": {
+      "A": "衝擊期",
+      "B": "崩潰期",
+      "C": "求助時期",
+      "D": "紊亂期"
+    },
+    "answer": "D",
+    "subject": "精神科與社區衛生護理學",
+    "year": 115,
+    "session": "第一次",
+    "examCode": "115030",
+    "examName": "護理師考試",
+    "originalNumber": 23,
+    "pdfPage": 5,
+    "answerBasis": "更正答案（官方更正檔；本題未更正）",
+    "subjectCode": "0105",
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx"
+  },
+  {
+    "number": 18,
+    "stem": "根據團體治療型態的定義及目標，鼓勵成員在團體中用言語表達，並探討個人現在與過去情境中，情緒或心理上的問題，以增進成員的人格重建或行為型態之修正與調適。屬於下列何種團體治療？",
+    "options": {
+      "A": "健康指導團體",
+      "B": "會心團體",
+      "C": "娛樂治療團體",
+      "D": "生物回饋團體"
+    },
+    "answer": "B",
+    "subject": "精神科與社區衛生護理學",
+    "year": 115,
+    "session": "第一次",
+    "examCode": "115030",
+    "examName": "護理師考試",
+    "originalNumber": 7,
+    "pdfPage": 2,
+    "answerBasis": "更正答案（官方更正檔；本題未更正）",
+    "subjectCode": "0105",
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx"
+  },
+  {
+    "number": 19,
+    "stem": "有關社區活動評值之總目標（goal）與具體目標（objective）的敘述，下列何者正確？①總目標為量化及可測量 ②具體目標為量化及可測量 ③總目標須包含人、時間、達成什麼及程度 ④具體目標須包含人、時間、達成什麼及程度",
+    "options": {
+      "A": "①②",
+      "B": "①③",
+      "C": "②④",
+      "D": "③④"
+    },
+    "answer": "C",
+    "subject": "精神科與社區衛生護理學",
+    "year": 115,
+    "session": "第一次",
+    "examCode": "115030",
+    "examName": "護理師考試",
+    "originalNumber": 33,
+    "pdfPage": 7,
+    "answerBasis": "更正答案（官方更正檔；本題未更正）",
+    "subjectCode": "0105",
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx"
+  },
+  {
+    "number": 20,
+    "stem": "有關老人憂鬱症的敘述，下列何者錯誤？",
+    "options": {
+      "A": "是老年人口中罕見的疾病",
+      "B": "自殺是憂鬱症最具潛在性致命因素",
+      "C": "會抱怨認知障礙",
+      "D": "常訴說身體症狀而忽略情緒症狀"
+    },
+    "answer": "A",
+    "subject": "精神科與社區衛生護理學",
+    "year": 115,
+    "session": "第一次",
+    "examCode": "115030",
+    "examName": "護理師考試",
+    "originalNumber": 5,
+    "pdfPage": 2,
+    "answerBasis": "更正答案（官方更正檔；本題未更正）",
+    "subjectCode": "0105",
+    "sourceUrl": "https://wwwq.moex.gov.tw/exam/wFrmExamQandASearch.aspx"
+  }
+];
